@@ -8,8 +8,8 @@
 * Taxi data: http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
 > Question
 * Q1: Implement a MapReduce program to count occurrences of each word in the attached article (IhaveaDream.txt).
-** A: Show the top 20 most frequent occurring words and their counts.
-** B: According to the word counting result, can you summarize this article by using some keywords? Show at least three keywords you choose and the reason of choosing these words.
+  * A: Show the top 20 most frequent occurring words and their counts.
+  * B: According to the word counting result, can you summarize this article by using some keywords? Show at least three keywords you choose and the reason of choosing these words.
 * Q2: Implement a MapReduce program to calculate the average number of passengers in one trip for each "Payment_type" in 2015 NYC Yellow Taxi trip data. In NYC Taxi data, the "Passenger_count" is a driver-entered value. Explain how you deal with the data loss issue.
 * Q3: For each of the above task 1 and 2, compare the execution time on local worker and yarn cluster. Also, give some discussions on your observation.
 ***
@@ -26,3 +26,36 @@ Step5: save the result to the directory
 `counts.saveAsTextFile("output")`   
 Step6: download the “output” directory to the localhost   
 `hdfs dfs -get output /home_il/s31tsm40`   
+![a](https://i.imgur.com/wAEGcWF.jpg])
+
+# Homework 4 (Build a predictive framework)
+
+> Goal
+* Build a predictive framework, which is able to predict "WeatherDelay" of all flights in 2008. This work should use the data from 2003 to 2007 as training including validation and 2008 as testing.
+>> Dataset
+* Airline on-time performance dataset: http://stat-computing.org/dataexpo/2009/
+> Question
+* Explain the predictive framework you designed.
+  * Feature: “Month” and “DayofMonth” 
+  * Algorithms: Linear regression.
+* Explain how method you use to validate your model when training.
+  * Use cross-validation to validate my model 
+  * The method of cross validation: K-fold
+* Show the evaluation results of validation in training and prediction in testing  by following those evaluation metric:
+<table>
+　<tr>
+    <td> </td>
+　  <td>average MAE</td>
+    <td>average RMSE</td>
+　</tr>
+ <tr>
+    <td>validation in training</td>
+　  <td>1.612427</td>
+    <td>5.016839</td>
+　</tr>
+ <tr>
+    <td>prediction in testing</td>
+　  <td>1.495521</td>
+    <td>9.243812</td>
+　</tr>
+</table>
