@@ -27,3 +27,35 @@ Step5: save the result to the directory
 Step6: download the “output” directory to the localhost   
 `hdfs dfs -get output /home_il/s31tsm40`   
 ![a](https://i.imgur.com/wAEGcWF.jpg])
+
+# Homework 4 (Build a predictive framework)
+
+> Goal
+* Build a predictive framework, which is able to predict "WeatherDelay" of all flights in 2008. This work should use the data from 2003 to 2007 as training including validation and 2008 as testing.
+>> Dataset
+* Airline on-time performance dataset: http://stat-computing.org/dataexpo/2009/
+> Question
+* Explain the predictive framework you designed.
+  * Feature: “Month” and “DayofMonth” 
+  * Algorithms: Linear regression.
+* Explain how method you use to validate your model when training.
+  * Use cross-validation to validate my model 
+  * The method of cross validation: K-fold
+* Show the evaluation results of validation in training and prediction in testing  by following those evaluation metric:
+<table>
+　<tr>
+    <td> </td>
+　  <td>average MAE</td>
+    <td>average RMSE</td>
+　</tr>
+ <tr>
+    <td>validation in training</td>
+　  <td>1.612427</td>
+    <td>5.016839</td>
+　</tr>
+ <tr>
+    <td>prediction in testing</td>
+　  <td>1.495521</td>
+    <td>9.243812</td>
+　</tr>
+</table>
