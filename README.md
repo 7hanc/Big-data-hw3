@@ -8,8 +8,8 @@
 * Taxi data: http://www.nyc.gov/html/tlc/html/about/trip_record_data.shtml
 > Question
 * Q1: Implement a MapReduce program to count occurrences of each word in the attached article (IhaveaDream.txt).
-** A: Show the top 20 most frequent occurring words and their counts.
-** B: According to the word counting result, can you summarize this article by using some keywords? Show at least three keywords you choose and the reason of choosing these words.
+  * A: Show the top 20 most frequent occurring words and their counts.
+  * B: According to the word counting result, can you summarize this article by using some keywords? Show at least three keywords you choose and the reason of choosing these words.
 * Q2: Implement a MapReduce program to calculate the average number of passengers in one trip for each "Payment_type" in 2015 NYC Yellow Taxi trip data. In NYC Taxi data, the "Passenger_count" is a driver-entered value. Explain how you deal with the data loss issue.
 * Q3: For each of the above task 1 and 2, compare the execution time on local worker and yarn cluster. Also, give some discussions on your observation.
 ***
