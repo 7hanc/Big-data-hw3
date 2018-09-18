@@ -26,4 +26,4 @@ Step5: save the result to the directory
 `counts.saveAsTextFile("output")`   
 Step6: download the “output” directory to the localhost   
 `hdfs dfs -get output /home_il/s31tsm40`   
-![a][https://i.imgur.com/wAEGcWF.jpg]
+![a](https://i.imgur.com/wAEGcWF.jpg])
