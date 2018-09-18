@@ -13,7 +13,7 @@
 * Q2: Implement a MapReduce program to calculate the average number of passengers in one trip for each "Payment_type" in 2015 NYC Yellow Taxi trip data. In NYC Taxi data, the "Passenger_count" is a driver-entered value. Explain how you deal with the data loss issue.
 * Q3: For each of the above task 1 and 2, compare the execution time on local worker and yarn cluster. Also, give some discussions on your observation.
 ***
-Answer 1:
+Answer 1:   
 Step1: upload txt file to hdfs.   
 `hdfs dfs -put /home_il/s31tsm40/IhaveaDream.txt hw.txt`   
 Step2: turn to spark environment   
@@ -23,6 +23,6 @@ Step3: open txt file which is in hdfs
 Step4: use mapreduce method to count the words   
 `val counts = textFile.flatMap(line => line.split(" ")).map(word => (word, 1)).reduceByKey(_+_)`   
 Step5: save the result to the directory   
-`counts.saveAsTextFile("output")`
+`counts.saveAsTextFile("output")`   
 Step6: download the “output” directory to the localhost   
 `hdfs dfs -get output /home_il/s31tsm40`   
