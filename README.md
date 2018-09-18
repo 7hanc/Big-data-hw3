@@ -35,13 +35,14 @@ Step6: download the “output” directory to the localhost
 >> Dataset
 * Airline on-time performance dataset: http://stat-computing.org/dataexpo/2009/
 > Question
-* Explain the predictive framework you designed.
+* Q1: Explain the predictive framework you designed.
   * Feature: “Month” and “DayofMonth” 
   * Algorithms: Linear regression.
-* Explain how method you use to validate your model when training.
+* Q2: Explain how method you use to validate your model when training.
   * Use cross-validation to validate my model 
   * The method of cross validation: K-fold
-* Show the evaluation results of validation in training and prediction in testing  by following those evaluation metric:
+Q1 and Q2 -> hw4.py
+* Q3: Show the evaluation results of validation in training and prediction in testing  by following those evaluation metric:
 <table>
 　<tr>
     <td> </td>
