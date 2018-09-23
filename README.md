@@ -35,26 +35,29 @@ Step6: download the “output” directory to the localhost
 >> Dataset
 * Airline on-time performance dataset: http://stat-computing.org/dataexpo/2009/
 > Question
-* Explain the predictive framework you designed.
+* Q1: Explain the predictive framework you designed.
   * Feature: “Month” and “DayofMonth” 
-  * Algorithms: Linear regression.
-* Explain how method you use to validate your model when training.
+  * Algorithms: **Linear regression**.
+* Q2: Explain how method you use to validate your model when training.
   * Use cross-validation to validate my model 
-  * The method of cross validation: K-fold
-* Show the evaluation results of validation in training and prediction in testing  by following those evaluation metric:
+  * The method of cross validation: **K-fold**   
+### The answer of Q1 and Q2 -> hw4.py
+* Q3: Show the **evaluation results** of validation in training and prediction in testing  by following those evaluation metric:
+  * MAE (平均絕對誤差) = ![mae](https://i.imgur.com/fHLGayL.png)
+  * RMSE (均方根誤差) = ![rmse](https://i.imgur.com/cAdZnvD.png)
 <table>
 　<tr>
     <td> </td>
-　  <td>average MAE</td>
-    <td>average RMSE</td>
+　  <td>average MAE (值越大, 誤差越大)</td>
+    <td>average RMSE (值越大, 誤差越大)</td>
 　</tr>
  <tr>
-    <td>validation in training</td>
+    <td>Validation (compare with one of the year of 2003-2007)</td>
 　  <td>1.612427</td>
     <td>5.016839</td>
 　</tr>
  <tr>
-    <td>prediction in testing</td>
+    <td>Prediction (compare with 2008)</td>
 　  <td>1.495521</td>
     <td>9.243812</td>
 　</tr>
