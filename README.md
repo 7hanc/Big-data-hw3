@@ -52,12 +52,12 @@ Step6: download the “output” directory to the localhost
     <td>average RMSE (值越大, 誤差越大)</td>
 　</tr>
  <tr>
-    <td>Validation (compare with one of the year of 2003-2007)</td>
+    <td>validation in training</td>
 　  <td>1.612427</td>
     <td>5.016839</td>
 　</tr>
  <tr>
-    <td>Prediction (compare with 2008)</td>
+    <td>prediction in testing</td>
 　  <td>1.495521</td>
     <td>9.243812</td>
 　</tr>
